@@ -3,5 +3,29 @@ extends ./layout/index
 block contenido
     main.container.mt-5 
         .row 
-            h1 #{pagina}
+            .col-md-5 
+                img(src="img/nosotros.jpg", alt="Imagen sobre nosotros", class="img-fluid")
+            .col-md-7 
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maxime repudiandae optio nam, nostrum reiciendis eius quaerat magni, perspiciatis tenetur accusantium tempora iusto odit laboriosam suscipit laborum iste, adipisci sunt blanditiis placeat. Hic rem nulla nobis quo tempore, unde itaque suscipit. Quo inventore dolorem rerum, odit expedita laudantium soluta fuga.
+
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nihil pariatur porro distinctio quia earum facere nostrum ea, blanditiis architecto quidem iure exercitationem harum temporibus laboriosam natus, dicta reiciendis perferendis.
+
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus et ipsam nemo, officiis tempora quibusdam sint tempore cumque possimus saepe omnis velit eius fuga error molestiae vel odit quis iure? Incidunt ea corporis labore repellendus deleniti. Veritatis eum temporibus eius?
+    
+    .listado-iconos 
+        .container.mt-5.py-5.text-center
+            .row 
+                .col-md-4 
+                    img(src="img/icono_seguridad.svg", alt="Icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis numquam reprehenderit magnam quia, commodi incidunt praesentium dolor, velit quasi repudiandae deleniti tenetur ad mollitia, autem veritatis ab. Rerum, repudiandae fugiat.
+                .col-md-4 
+                    img(src="img/icono_destinos.svg", alt="Icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos 
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis numquam reprehenderit magnam quia, commodi incidunt praesentium dolor, velit quasi repudiandae deleniti tenetur ad mollitia, autem veritatis ab. Rerum, repudiandae fugiat.
+                .col-md-4 
+                    img(src="img/icono_precio.svg", alt="Icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores Precio 
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis numquam reprehenderit magnam quia, commodi incidunt praesentium dolor, velit quasi repudiandae deleniti tenetur ad mollitia, autem veritatis ab. Rerum, repudiandae fugiat.
 
