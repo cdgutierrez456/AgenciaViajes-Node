@@ -6,12 +6,16 @@ const guardarTestimonial = async (req, res) => {
     const {nombre, correo, mensaje} = req.body;
 
     if(nombre.trim() === '' || correo.trim() === '' || mensaje.trim() === '') {
+        // Consultar testimoniales existentes
+        const testimoniales = await Testimonial.findAll();
+
         res.render('testimoniales', {
             pagina: 'Testimoniales',
             errores: 'Todos los campos son obligatorios',
             nombre,
             correo,
-            mensaje
+            mensaje,
+            testimoniales
         })
     } else {
         // Almacenando datos en la base de datos
