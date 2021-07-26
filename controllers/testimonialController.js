@@ -4,7 +4,13 @@ const guardarTestimonial = (req, res) => {
     const {nombre, correo, mensaje} = req.body;
 
     if(nombre.trim() === '' || correo.trim() === '' || mensaje.trim() === '') {
-        console.log('Todos los datos son obligatorios');
+        res.render('testimoniales', {
+            pagina: 'Testimoniales',
+            errores: 'Todos los campos son obligatorios',
+            nombre,
+            correo,
+            mensaje
+        })
     }
 
 }
